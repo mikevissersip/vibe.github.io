@@ -272,6 +272,15 @@
 						</div>
 					</form>-->
 					<form action="https://formsubmit.co/info@vibe-electric.nl" method="POST">
+						<!-- Honeypot (anti-spam) -->
+						<input type="text" name="_honey" style="display:none">
+						
+						<!-- Disable CAPTCHA (optional) -->
+						<input type="hidden" name="_captcha" value="false">
+						
+						<!-- Success redirect (optional) -->
+						<input type="hidden" name="_next" value="https://vibe-electric.nl/thanks.html">
+						
 						<label for="name">Name:</label><br>
 						<input type="text" name="name" required><br><br>
 						
