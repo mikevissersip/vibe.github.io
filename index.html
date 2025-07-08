@@ -272,9 +272,24 @@
 						</div>
 					</form>-->
 					<form action="https://formsubmit.co/info@vibe-electric.nl" method="POST">
-						<input type="text" name="name" required>
-						<input type="email" name="email" required>
-						<input type="text" name="bericht" required>
+						<!-- Honeypot (anti-spam) -->
+						<input type="text" name="_honey" style="display:none">
+						
+						<!-- Disable CAPTCHA (optional) -->
+						<input type="hidden" name="_captcha" value="false">
+						
+						<!-- Success redirect (optional) -->
+						<input type="hidden" name="_next" value="https://vibe-electric.nl/thanks.html">
+						
+						<label for="name">Name:</label><br>
+						<input type="text" name="name" required><br><br>
+						
+						<label for="email">Email:</label><br>
+						<input type="email" name="email" required><br><br>
+						
+						<label for="message">Message:</label><br>
+						<textarea name="message" rows="5" required></textarea><br><br>
+						
 						<button type="submit">Send</button>
 					</form>
 					
