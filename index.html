@@ -245,29 +245,29 @@
 					<form action="https://formsubmit.co/info@vibe-electric.nl" method="POST" class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Naam">
-								</div>
+							<div class="form-group">
+								<input type="text" name="name" class="form-control" placeholder="Naam" required>
+							</div>
 							</div>
 							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Email">
-								</div>
+							<div class="form-group">
+								<input type="email" name="email" class="form-control" placeholder="Email" required>
+							</div>
 							</div>
 							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Onderwerp">
-								</div>
+							<div class="form-group">
+								<input type="text" name="subject" class="form-control" placeholder="Onderwerp">
+							</div>
 							</div>
 							<div class="col-md-12">
-								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Bericht"></textarea>
-								</div>
+							<div class="form-group">
+								<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Bericht" required></textarea>
+							</div>
 							</div>
 							<div class="col-md-12">
-								<div class="form-group">
-									<input type="submit" value="Verstuur bericht" class="btn btn-primary py-3 px-5">
-								</div>
+							<div class="form-group">
+								<input type="submit" value="Verstuur bericht" class="btn btn-primary py-3 px-5">
+							</div>
 							</div>
 						</div>
 					</form>
